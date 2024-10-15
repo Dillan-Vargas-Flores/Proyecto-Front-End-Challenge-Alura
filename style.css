@@ -1,0 +1,447 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-de-fondo-menu);
+}
+
+.cabecera__logo {
+    max-width: 80px; /* Ajuste para pantallas pequeñas */
+}
+.cabecera__titulo {
+    font-size: 1.2rem;
+    text-align: center;
+}
+.navegacion__lista {
+    display: none;
+}
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.redes{
+    display: flex;
+    justify-content: left;
+    gap: 50px;
+}
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi{
+    display: flex;
+    flex-direction: column;
+    background-color: #2076de35;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+.sobre-mi__titulo{
+    text-align: left;
+}
+.sobre-mi__texto{
+    max-width: 1000px; /* Ajusta este valor según el ancho deseado */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+.sobre-mi__firma{
+    max-width: 150px;
+}
+/*------------------------------ Sección de Habilidades ------------------------------*/
+.habilidades{
+    justify-content: center;
+}
+.habilidades__titulo{
+    display: flex;
+    justify-content: center;
+}
+.habilidades__lista{
+    display: flex;
+    justify-content: center;
+    
+}
+.habilidades__elemento{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; /* Centra el bloque de texto */
+    background-color: white; /* Si quieres que el cuadro tenga un color diferente al de fondo */
+    padding: 45px;
+    border-radius: 5px; /* Opcional: para bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de cuadro */
+    
+}
+.habilidades__icono{
+    justify-items: center;
+    max-width: 30px;
+}
+/*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones{
+    justify-content: center;
+}
+.aficiones__titulo{
+    display: flex;
+    justify-content: center;
+}
+.aficiones__lista{
+    display: flex;
+    justify-content: center;
+}
+.aficiones__elemento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto; /* Centra el bloque de texto */
+    background-color: white; /* Si quieres que el cuadro tenga un color diferente al de fondo */
+    padding: 45px;
+    border-radius: 5px; /* Opcional: para bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de cuadro */
+}
+.aficiones__icono{
+    padding-left: 20px;
+    max-width: 30px;
+}
+/*------------------------------ Sección de Formación academica --------------------------------*/
+.formacion{
+    display: flex;
+    flex-direction: column;
+    background-color: #2076de35;
+    padding: 30px;
+}
+.formacion__titulo{
+    display: flex;
+    justify-content: center;
+}
+.formacion__lista{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.formacion__icono{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto; /* Centra el bloque de texto */
+    background-color: white; /* Si quieres que el cuadro tenga un color diferente al de fondo */
+    padding: 45px;
+    border-radius: 5px; /* Opcional: para bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de cuadro */
+}
+/*------------------------------ Sección de Experiencia Profesional ---------------------------------*/
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+.proyectos__titulo{
+    display: flex;
+    justify-content: center;
+}
+.proyectos__contenedor1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+    padding-bottom: 50px;
+    gap: 30px;
+}
+.proyectos__contenedor2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+    gap: 30px;
+}
+
+/* ------------------------------ Sección de Contacto ---------------------------------------*/
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #2076de35;
+}
+.contacto__titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+/* Contenedor para la imagen y el formulario */
+.contacto__contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    max-width: 1200px; /* Ajusta el ancho máximo según tu diseño */
+}
+/* Imagen del lado izquierdo */
+.contacto__imagen {
+    flex: 1;
+    max-width: 300px; /* Controla el tamaño máximo de la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el formulario */
+    object-fit: contain; /* Asegura que la imagen mantenga sus proporciones */
+}
+/* Formulario del lado derecho */
+.contacto__formulario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    max-width: 600px; /* Controla el ancho máximo del formulario */
+}
+.contacto__campo {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+}
+.contacto__campo_contacto__campo--textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    padding-bottom: 150px;
+    font-size: 1em;
+}
+.contacto__boton {
+    padding: 10px 20px;
+    background-color: #2076de;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    max-width: 200px;
+}
+
+.footer{
+    background-color: #2076de;
+    padding: 1.5rem;
+    color: var(#000000);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ocultar la imagen en pantallas pequeñas (teléfonos) */
+@media (max-width: 767px) {
+    .contacto__imagen {
+        display: none;
+    }
+    .formacion__lista {
+        flex-direction: column; /* Cambia a disposición vertical */
+        gap: 10px; /* Ajusta el espacio entre los elementos en móvil */
+    }  
+    .formacion__elemento{
+        flex-direction: column;
+        padding-left: 50px;
+    }
+    .formacion__nombre{
+        flex-direction: column;
+        padding-left: 170px;
+    }
+    .formacion__detalle{
+        flex-direction: column;
+        padding-left: 170px;
+    }
+    .aficiones__lista{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Define 2 columnas de igual tamaño */
+        gap: 10px; /* Espacio entre los elementos */   
+        padding-left: 150px;  
+        padding-right: 150px;   
+    }
+    .habilidades__lista{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Define 2 columnas de igual tamaño */
+        gap: 10px; /* Espacio entre los elementos */   
+        padding-left: 150px;  
+        padding-right: 150px; 
+    }
+    .sobre-mi{
+        justify-content: center;
+        max-width: 460px;
+    }
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+    }
+    .presentacion__foto{
+        max-width: 200px;
+        padding-left: 90px;
+    }
+    .presentacion__contenedor{
+        max-width: 500px;
+        padding-left: 75px;
+    }
+    .redes{
+        gap: 35px;
+    }
+    .proyectos__contenedor1__imagen{
+        max-width: 100%;
+    }
+    .proyectos__contenedor2__imagen{
+        max-width: 100%;
+    }
+}
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cabecera__logo {
+        max-width: 100px;
+    }
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+}
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+    .proyectos__contenedor1{
+        display: flex;
+        flex-direction: row;
+        padding-left: 200px;
+        gap: 30px;
+    }
+    .proyectos__contenedor2{
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 200px;
+        gap: 30px;
+    }
+    .proyectos__contenedor1__imagen{
+        max-width: 50%;
+    }
+    .proyectos__contenedor2__imagen{
+        max-width: 50%;
+    }
+}
+
+/* Ocultar la imagen en pantallas medianas (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .contacto__imagen {
+        display: none;
+    }
+    .navegacion__lista{
+        display: none;
+    }
+    .presentacion{
+        gap: 25px;
+    }
+    .presentacion__foto{
+        max-width: 200px;
+    }
+    .habilidades{
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .habilidades__lista{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Define 2 columnas de igual tamaño */
+        gap: 5px; /* Espacio entre los elementos */   
+        padding-left: 50px;  
+        padding-right: 50px; 
+    }
+    .habilidades__elemento{
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        justify-content: right;
+    }
+    .aficiones{
+        padding-bottom: 40px;
+    }
+    .aficiones__lista{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Define 2 columnas de igual tamaño */
+        gap: 5px; /* Espacio entre los elementos */   
+        padding-left: 50px;  
+        padding-right: 50px;
+    }
+    .aficiones__elemento{
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        justify-content: right;
+    }
+    .formacion__lista{
+        max-width: 500px;
+        padding-left: 175px;
+    }
+    .contacto__formulario{
+        max-width: 90%;
+    }
+    .proyectos__contenedor1__imagen{
+        max-width: 100%;
+    }
+    .proyectos__contenedor2__imagen{
+        max-width: 100%;
+    }
+}
+
